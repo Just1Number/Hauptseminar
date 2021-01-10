@@ -1,0 +1,47 @@
+% !TEX root = main.tex
+% Definition of the Cover Page
+\def\seminarheader{{
+  \pagenumbering{Roman}
+  \hypersetup{pageanchor=false}
+  \begin{titlepage}
+    \pagestyle{empty}
+    % header (thm logo)
+    \begin{wrapfigure}{r}{0.68\textwidth}
+      \centering
+      \includegraphics[width=0.68\textwidth]{Bilder/Logo_THM_FB13.png}
+    \end{wrapfigure}
+    \parbox[t]{0.32\textwidth}{
+      \vspace{-0.5ex}
+      \color{thmgrey}
+      Hauptseminar\\*
+      Dr. Eschenhof-Kammer \\*
+      Wintersemester 2020/21 \\*
+    }
+
+    % Title of the Paper
+    \vspace*{\fill} % hack hack hackedy hack
+    \parbox[t]{0.95\textwidth}{
+      \center\LARGE\bf\color{thmgrey} 
+      Seminararbeit zum Thema:\\*
+      ,,Internationaler Vergleich der Digitalisierung der Krankenhauslandschaft:\\
+Treibergrößen und Defizitbereiche in Deutschland
+''\\*
+    }
+    \vspace*{\fill}
+
+    % Contact information
+    \parbox[t]{\textwidth}{
+      \large Johannes Wolf \\*
+      \textcolor{thmgrey}{Email:} johannes.wolf@mnd.thm.de \\*
+      \textcolor{thmgrey}{Matrikelnummer:} 5146451 \\*
+    }
+  \end{titlepage}
+  % new page
+  \hypersetup{pageanchor=true}
+  \pagenumbering{Roman}
+  \tableofcontents
+  \newpage
+}}
+
+% Add header to the beginning of the document
+\AtBeginDocument{\seminarheader}
