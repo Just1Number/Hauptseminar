@@ -1,8 +1,10 @@
-% !TEX root = main.tex
+% !TEX root = ../main.tex
 \subsection{Ausgangssituation}
-	Fragetypen\\
-	Wie viele Fragen
 \begin{itemize}
+	\item Fragetypen
+	\item Wie viele Fragen
+	\item Umfrage ist freiwillig
+	\item 2020 kein WCS -> eigene Methodik für Vergleich
 	\item Gegenüberstellung der Fragen im IT-Report 2020 \parencite{huebner2020}
 	\item Wie viele Krankenhäuser gibt es insgesamt
 	\item Wie viele Krankenhäuser wurden befragt? \parencite[31]{huebner2020}
@@ -19,11 +21,46 @@
 \end{itemize}
 \subsection{Methodik}
 \begin{itemize}
-	\item Einfache Vergleichsmethodik
-	\item Für jede Frage gibt es einen Gewinner
+	\item Ablesemethodik
 	\begin{itemize}
-		\item Wann ist jemand ein Gewinner
-		\item bsp Papier einscanne: Geht das direkt in ne datenbank? Wahrschienlich nicht
+		\item Bei Tortendiagrammen wurden Werte unter 10\% nicht dazu geschrieben, deshalb wurden sie für große n geschätzt. Für kleine Anzahl der Grundgesamtheit konnten die fehlenden Werte ermittelt werden, da nicht viele in Frage kamen.
+	\end{itemize}
+	\item Einfache Vergleichsmethodik
+	\item Fokus: Universitätsmedizin wird ignoriert
+	\item Für jede Frage gibt es einen Gewinner
+	\item Wann ist jemand ein Gewinner?
+	\item \textit{Weiß nicht} wird ignoriert
+	\begin{itemize}
+		\item wird indirekt neutral oder negativ bewertet
+	\end{itemize}
+	\item bsp Papier einscannen: Geht das direkt in ne datenbank? Wahrschienlich nicht
+	\begin{itemize}
+		\item Boxplots
+		\item Boxplots erklären (https://hds.hebis.de/thm/Record/HEB363729879) S. 38
+		\begin{itemize}
+			\item Größter Median > größtes oberstes Quartil > größter oberster Whisker
+			\item evtl. wie bei Güte der Informationsversorgung
+		\end{itemize}
+		\item Einfache Säulen mit wenig Antwortmöglichkeiten
+		\begin{itemize}
+			\item Summe der Antworten, die Digitalisierung anzeigen
+			\item Größte Summe gewinnt
+		\end{itemize}
+		\item Ja/Nein Säulen mit vielen Kategorien
+		\begin{itemize}
+			\item Jede Kategorie gewinnt einzeln
+			\item Land mit den meisten Kategorien gewinnt Frage
+			\item Was passiert wenn Länder gleich viele Kategorien gewinnen
+		\end{itemize}
+		\item Säule mit mehr als zwei Teilen (Wie heißen diese Darstellungen richtig?)
+		\item Güte der Informationsversorgung (Schweiz hat bei Aufnahme nicht teilgenommen)
+		\begin{itemize}
+			\item Antworten werden gewichtet
+			\item ''Stimme überhaupt nicht zu'' = -2 bis ''Stimme voll zu'' = +2
+			\item multipliziert mit Prozent der Stimmen und dann addiert
+			\item Scores für alle Kategorien summieren
+			\item höchster Score gewinnt
+		\end{itemize}
 	\end{itemize}
 	\item Jeder Prozess wird einzeln betrachtet
 	\item Für jede Frage wird entschieden was einen Digitalisierungsfortschritt darstellt
@@ -34,4 +71,5 @@
 	\item Gewinner vorstellen
 	\item Gemeinsamkeiten und Unterschiede aufzeigen
 \end{itemize}
+\subsection{Andere Ländervergleiche}
 \subsection{Defizite / Defizitbereiche im Vergleich}
