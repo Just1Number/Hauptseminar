@@ -19,16 +19,6 @@
 			\item 
 		\end{itemize}
 	\end{itemize}
-	\subsection{[Klinische Prozesse]}
-		Aufnahme, Visite, [OP-Vorbereitung, OP-Nachbereitung], Entlassung (ggf. als Grafik)
-	\subsection{IT-Unterstützung klinischer Prozesse}
-		\parencite[37]{huebner2019}
-	\begin{itemize} 
-		\item Information und Daten
-		\item IT-Funktionen/Anwendungen
-		\item Integration
-		\item Distribution
-	\end{itemize}
 	\subsection{IT-Unterstützung der Behandlung}
 	\parencite[51]{oswald2019} \parencite[14]{braeutigam2017}
 	\begin{itemize}
@@ -50,17 +40,33 @@
 		\item WLAN
 		\item Location Based Services (Papi)
 	\end{itemize}
-	\subsection{Elektronische Patientenakte}
-	\subsection{IT-Management?}
+	\subsection{IT-Unterstützung der klinischen Prozesse}
+		\begin{itemize}
+			\item Klinische Prozesse
+			\begin{itemize}
+				\item Aufnahme, Visite, [OP-Vorbereitung, OP-Nachbereitung], Entlassung (ggf. als Grafik) \parencite[37]{huebner2019}
+			\end{itemize}
+			\item Deskriptoren
+		\begin{itemize} 
+			\item Information und Daten
+			\item IT-Funktionen/Anwendungen
+			\item Integration
+			\item Distribution
+		\end{itemize}
+		\item In den Kapiteln \ref{sec:stand in deutschland} und \ref{sec:laendervergleich} wird die Sicht der IT auf die klinischen Prozesse für die Analyse in Deutschland und den Ländervergleich mit Österreich und der Schweiz herangezogen.
+		\end{itemize}
+	\subsection{IT-Report}
+	IT-Report der Uni Osnabrück beschreiben
 \section{Bewertungskriterien und Treibergrößen des Digitalisierungsfortschritts}
 	\subsection{Kennzahlen}
 	\subsubsection{Workflow Composite Score}
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.8\textwidth]{Bilder/WCS_Hübner_2018_S22.png}
-			\caption{Hierachie des Workflow Composite Scores \parencite[22]{huebner2018}}
-			\label{fig:WCS}
-		\end{figure}
+		Aufnahme, Visite, [Op-Vorbereitung, Op-Nachbereitung], Entlassung (ggf. als Grafik)\\
+		%\begin{figure}[h]
+		%	\centering
+		%	\includegraphics[width=0.8\textwidth]{Bilder/WCS_Hübner_2018_S22.png}
+		%	\caption{Hierachie des Workflow Composite Scores \parencite[22]{huebner2018}}
+		%	\label{fig:WCS}
+		%\end{figure}
 		Diese Kennzahl bedient sich des \textit{Prinzip der klinischen Informationslogistik}. Bei diesem Prinzip "sollte ein [Krankenhausinformationssystem] immer die richtigen Patienteninformation zur richtigen Zeit am richtigen Ort in der richtigen Qualität für die richtigen Personen bereitstellen."\parencite[36]{huebner2019} Der Workflow Composite Score misst inwieweit dieser Standard erreicht ist. Hierbei werden über 100 Einzelindikatoren erfasst und, wenn möglich, in 5 klinische Prozesse (Aufnahme, Visite, OP-Vorbereitung, OP-Nachbereitung, Entlassung) eingeteilt. Bei Krankenhäusern, die nicht über einen OP verfügen, werden nur Aufnahme, Visite und Entlassung betrachtet. Innerhalb dieser Prozesse werden die Indikatoren noch 4 Deskriptoren aufgeteilt. Diese Indikatoren sind
 		\begin{enumerate}
 			\item Daten und Informationen
@@ -68,12 +74,28 @@
 			\item Integration und
 			\item Distribution.
 		\end{enumerate}
-		Bei \textit{Daten und Informationen} geht es um die Vielfalt der elektronisch verfügbaren Patienteninformationen. 
+		Bei \textit{Daten und Informationen} geht es um die Vielfalt der elektronisch verfügbaren Patienteninformationen. Teil dieses Deskriptors ist z.B. die Frage ob Patientenstammdaten bei der Aufnahme schon in elektronischer Form vorhanden sind oder ob sie erst manuell aufgenommen werden müssen. \textit{Funktion} erfasst welche IT-Anwendungen zur Verfügung stehen, z.B. ein System zur Belegesteuerung, aber auch das Vorhandensein von WLAN. Inwieweit diese Anwendungen miteinander verknüpft sind zeigt der Deskriptor \textit{Integration} auf. \textit{Distribution} sind die Mittel mit denen Informationen an ihre Nutzer gebracht werden. Können Pflegekräfte Patientendaten nur an einem PC einsehen oder gibt es Tablets, die einfacher mit auf ein Zimmer genommen werden können?
+
+		Für die Schnittstelle
 	\subsubsection{ICS}
 	\subsubsection{PIMCS}
 	\subsubsection{EMRAM}
 	\parencite{Stephani2019}
 	\subsection{Treibergrößen (definieren und gemeinsames Verständnis definieren)}
+	\begin{itemize}
+		\item Hoffnungen \parencite[15]{braeutigam2017}
+		\begin{itemize}
+			\item die Verbesserung der Versorgungsqualität
+			\item die Erleichterung der Dokumentation
+			\item Verbesserung bei Organisation und Kommunikation
+			\item Qualitätssteigerungen bei Diagnostik und Therapie, insbesondere bei Operationen
+			\item Zeitersparnis
+			\item mehr Zeit für den direkten Patientenkontakt vor allem in der Pflege
+			\item Entlastung von Routineaufgaben
+			\item Entlastung von körperlich anstrengenden Tätigkeiten
+			\item Fernbetreuung von Patienten
+		\end{itemize}
+	\end{itemize}
 	\begin{itemize}
 		\item Methodik
 		\begin{itemize}
@@ -81,7 +103,7 @@
 			\item (mind. 0,05 Signifikanz des Mittelwertunterschieds)
 		\end{itemize}
 	\end{itemize}
-\section{Aktueller Stand der Digitalisierung in deutschen Krankenhäuser}
+\section{Aktueller Stand der Digitalisierung in deutschen Krankenhäuser} \label{sec:stand in deutschland}
 	\subsection{Aktueller Stand bzgl. Bewertungskriterien}
 		Veränderung von 2018 zu 2020
 	\subsection{Treibergrößen für Digitalisierung in Deutschland}
@@ -98,9 +120,12 @@
 		\item Distribution von Daten (Endgeräte)
 		\item Politik-Gedöns
 	\end{itemize}
-\section{Ländervergleich}
+\section{Ländervergleich} \label{sec:laendervergleich}
 \input{Kapitel/Laendervergleich}
 \section{Fazit und Ausblick}
+\begin{itemize}
+	\item Treibergröße Geld
+\end{itemize}
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{3}
