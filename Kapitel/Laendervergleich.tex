@@ -1,4 +1,5 @@
 % !TEX root = ../main.tex
+Um Deutschland im internationalem Vergleich zu sehen
 \subsection{Ausgangssituation}
 \begin{itemize}
 	\item Fragetypen
@@ -9,10 +10,21 @@
 	\item Wie viele Krankenhäuser gibt es insgesamt
 	\item Wie viele Krankenhäuser wurden befragt? \parencite[31]{huebner2020}
 	\begin{itemize}
-		\item 608 IT-Verantwortliche
-		\item 492 Deutschland
-		\item 49 Österreich
-		\item 67 Schweiz
+		\item \cite[296]{huebner2020}
+		\item Krankenhäuser angeschrieben:
+		\begin{itemize}
+			\item 2.421
+			\item 1.951 in Deutschland
+			\item 260 in Österreich 
+			\item 211 in der deutschsprachigen Schweiz
+		\end{itemize}
+		\item Antworten:
+		\begin{itemize}
+			\item 608 
+			\item 492 Deutschland
+			\item 49 Österreich
+			\item 67 Schweiz
+		\end{itemize}
 		\item Rücklaufquoten:
 		\begin{itemize}
 			\item 25,2\% (DE), 18,8\% (AT), 31,8\% (CH)
@@ -21,55 +33,74 @@
 	\end{itemize}
 \end{itemize}
 \subsection{Methodik}
-\begin{itemize}
-	\item Ablesemethodik
-	\begin{itemize}
-		\item Bei Tortendiagrammen wurden Werte unter 10\% nicht dazu geschrieben, deshalb wurden sie für große n geschätzt. Für kleine Anzahl der Grundgesamtheit konnten die fehlenden Werte ermittelt werden, da nicht viele in Frage kamen.
-	\end{itemize}
-	\item Einfache Vergleichsmethodik
-	\item Fokus: Universitätsmedizin wird ignoriert
-	\item Für jede Frage gibt es einen Gewinner
-	\begin{itemize}
-		\item Bei Gleichstand von 2 Ländern zählen beide als Gewinner
-	\end{itemize}
-	\item Wann ist jemand ein Gewinner?
-	\item \textit{Weiß nicht} wird ignoriert
-	\begin{itemize}
-		\item wird indirekt neutral oder negativ bewertet
-	\end{itemize}
-	\item bsp Papier einscannen: Geht das direkt in ne datenbank? Wahrschienlich nicht
-	\begin{itemize}
-		\item Boxplots
-		\item Boxplots erklären (https://hds.hebis.de/thm/Record/HEB363729879) S. 38
-		\begin{itemize}
-			\item Größter Median > größtes oberstes Quartil > größter oberster Whisker
-			\item evtl. wie bei Güte der Informationsversorgung
-		\end{itemize}
-		\item Einfache Säulen mit wenig Antwortmöglichkeiten
-		\begin{itemize}
-			\item Summe der Antworten, die Digitalisierung anzeigen
-			\item Größte Summe gewinnt
-		\end{itemize}
-		\item Ja/Nein Säulen mit vielen Kategorien
-		\begin{itemize}
-			\item Jede Kategorie gewinnt einzeln
-			\item Land mit den meisten Kategorien gewinnt Frage
-			\item Was passiert wenn Länder gleich viele Kategorien gewinnen
-		\end{itemize}
-		\item Gestapelte Säulen
-		\item Güte der Informationsversorgung (Schweiz hat bei Aufnahme nicht teilgenommen)
-		\begin{itemize}
-			\item Antworten werden gewichtet
-			\item ''Stimme überhaupt nicht zu'' = -2 bis ''Stimme voll zu'' = +2
-			\item multipliziert mit Prozent der Stimmen und dann addiert
-			\item Scores für alle Kategorien summieren
-			\item höchster Score gewinnt
-		\end{itemize}
-	\end{itemize}
-	\item Jeder Prozess wird einzeln betrachtet
-	\item Für jede Frage wird entschieden was einen Digitalisierungsfortschritt darstellt
-\end{itemize}
+	Da der IT-Report 2020 keinen quantitativen Vergleich der Ergebnisse angibt, wurde eine eigene Vergleichsmethodik entwickelt. Die Daten lagen nicht in Rohform vor und wurden deshalb manuell in Tabellenform zurückgeführt. Für die Bewertung wurde für jede Frage das Land ermittelt, welches am besten abgeschnitten hat. Die Ergebnisse der Befragung werden mit vier verschiedenen Darstellungen vorgestellt, die unterschiedlich ausgelesen und bewertet werden müssen. Es gibt \textit{einfache Balkendiagramme}, \textit{Balkendiagramme, mit mehreren Teilfragen}, die mit ja oder nein beantwortet wurden, \textit{gestapelte Balkendiagramme} und \textit{Boxplots}.
+	\vspace{1ex}\\
+	\textbf{Einfache Balkendiagramme}\\
+	Für Balkendiagramme wurden die Werte der einzelnen Balken in eine Tabelle übernommen. Um die Fragen miteinander zu vergleichen wurde hier entschieden welche Antworten einen positiven Effekt auf Digitalisierung anzeigen. Die Prozentwerte dieser Antworten wurden dann addiert und das Land mit dem höchsten Wert wurde als am besten eingeschätzt.
+	\vspace{1ex}\\
+	\textbf{Balkendiagramme, mit mehreren Teilfragen}\\
+	Für jede Teilfrage wurde die positive Antwort aufgeschrieben.	Fragen, die in dieser Darstellung präsentiert wurden, ermitteln welche IT-Funktionen, Geräte o.Ä. im Krankenhaus zur Verfügung steht. Dabei wird nur die Existenz erfragt. Es wird angenommen, das eine Existenz immer positiv im Hinblick auf die Digitalisierung zu bewerten ist. Unter dieser Annahme wurde für jede Teilfrage ermittelt welches Land am besten ist und die Frage dann dem Land zugeschrieben, das am meisten Teilfragen gewonnen hat. Bei einem Gleichstand von zwei Ländern wurde die Frage für Beide gewertet. Bei einem Gleichstand von allen drei Ländern wurde die Frage ignoriert.
+	\vspace{1ex}\\
+	\textbf{Gestapelte Balkendiagramme}\\
+	Bei dieser Darstellung haben die Autoren der Studie aus ästhetischen Gründen Angaben unter 10\% nicht als Zahl angezeigt \parencite[298]{huebner2020}. Bei einer hohen Anzahl an Antworten (einem hohen n) wurden die Werte in diesen Fällen geschätzt. Bei einer kleinen Anzahl an Antworten ($n<50$), war die Anzahl der möglichen Werte so gering, das der genaue Wert ermittelt werden konnte. Auch hier besteht jede Frage aus mehreren Teilfragen. Diese werden wie bei den simpleren Balkendiagrammen einzeln einem Land gutgeschrieben und das Land mit den meisten Teilfragen wird dann als Gewinner der Frage gewertet.
 
+	Die Antwortmöglichkeiten auf die Teilfragen haben hier immer eine klare bewertende Reihenfolge. Es geht entweder um Zustimmung mit einer Aussage (\glqq Stimme überhaupt nicht zu\grqq{ }bis \glqq Stimme voll zu\grqq) oder um die Durchdringung einer IT-Funktion (0\%, unter 50\%, über 50\% oder 100\%). \glqq Weiß nicht\grqq{ }wurde ignoriert. Jeder dieser Antwortmöglichkeiten wurde nun eine Wertung von -2 bis 2 zugeschrieben. Jede Wertung wurde mit dem entsprechenden Prozentwert multipliziert und dann aufsummiert. Dem Land mit der höchsten Summe wurde die Teilfrage gutgeschrieben.
+	BEISPIEL
+	\vspace{1ex}\\
+	\textbf{Boxplots}\\
+	<++>
+
+
+	Um abschließend eine Übersicht zu gewinnen, werden für jedes Land die Anzahl der gewonnen Fragen berechnet. Zusätzlich werden noch Zwischensummen für die einzelnen klinischen Prozesse gebildet. Jede Frage wird gleich gewichtet. 
+
+% \begin{itemize}
+% 	\item Ablesemethodik
+% 	\begin{itemize}
+% 		\item Bei gestapelten Säulen wurden Werte unter 10\% nicht dazu geschrieben, deshalb wurden sie für große n geschätzt. Für kleine Anzahl der Grundgesamtheit konnten die fehlenden Werte ermittelt werden, da nicht viele in Frage kamen.
+% 	\end{itemize}
+% 	\item Einfache Vergleichsmethodik
+% 	\item Fokus: Universitätsmedizin wird ignoriert
+% 	\item Für jede Frage gibt es einen Gewinner
+% 	\begin{itemize}
+% 		\item Bei Gleichstand von 2 Ländern zählen beide als Gewinner
+% 	\end{itemize}
+% 	\item Wann ist jemand ein Gewinner?
+% 	\item \textit{Weiß nicht} wird ignoriert
+% 	\begin{itemize}
+% 		\item wird indirekt neutral oder negativ bewertet
+% 	\end{itemize}
+% 	\item bsp Papier einscannen: Geht das direkt in ne datenbank? Wahrschienlich nicht
+% 	\begin{itemize}
+% 		\item Boxplots
+% 		\item Boxplots erklären \parencite[44]{kronthaler2016}
+% 		\begin{itemize}
+% 			\item Größter Median > größtes oberstes Quartil > größter oberster Whisker
+% 			\item evtl. wie bei Güte der Informationsversorgung
+% 		\end{itemize}
+% 		\item Einfache Säulen mit wenig Antwortmöglichkeiten
+% 		\begin{itemize}
+% 			\item Summe der Antworten, die Digitalisierung anzeigen
+% 			\item Größte Summe gewinnt
+% 		\end{itemize}
+% 		\item Ja/Nein Säulen mit vielen Kategorien
+% 		\begin{itemize}
+% 			\item Jede Kategorie gewinnt einzeln
+% 			\item Land mit den meisten Kategorien gewinnt Frage
+% 			\item Was passiert wenn Länder gleich viele Kategorien gewinnen
+% 		\end{itemize}
+% 		\item Gestapelte Säulen
+% 		\item Güte der Informationsversorgung (Schweiz hat bei Aufnahme nicht teilgenommen)
+% 		\begin{itemize}
+% 			\item Antworten werden gewichtet
+% 			\item ''Stimme überhaupt nicht zu'' = -2 bis ''Stimme voll zu'' = +2
+% 			\item multipliziert mit Prozent der Stimmen und dann addiert
+% 			\item Scores für alle Kategorien summieren
+% 			\item höchster Score gewinnt
+% 		\end{itemize}
+% 	\end{itemize}
+% 	\item Jeder Prozess wird einzeln betrachtet
+% 	\item Für jede Frage wird entschieden was einen Digitalisierungsfortschritt darstellt
+% \end{itemize}
 \subsection{Gegenüberstellung der Länder}
 \begin{itemize}
 	\item Gewinner vorstellen
