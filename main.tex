@@ -1,7 +1,7 @@
 % !TEX output_directory=output
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{helper.tex} % packages and global definitions
-\input{header.tex} % titelpage and table of contents
+%\input{header.tex} % titelpage and table of contents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %\section*{Abstract}
@@ -18,7 +18,22 @@
 
 	Es gibt verschiedene Ansätze die im Krankenhaus angewandten Technologien einzuteilen
 
-
+	Chancen / Risiken (evtl zusätzlich Tabelle zum gegenüberstellen)
+	\subsection{Treibergrößen}
+	\begin{itemize}
+		\item Hoffnungen \parencite[15]{braeutigam2017}
+		\begin{itemize}
+			\item die Verbesserung der Versorgungsqualität
+			\item die Erleichterung der Dokumentation
+			\item Verbesserung bei Organisation und Kommunikation
+			\item Qualitätssteigerungen bei Diagnostik und Therapie, insbesondere bei Operationen
+			\item Zeitersparnis
+			\item mehr Zeit für den direkten Patientenkontakt vor allem in der Pflege
+			\item Entlastung von Routineaufgaben
+			\item Entlastung von körperlich anstrengenden Tätigkeiten
+			\item Fernbetreuung von Patienten
+		\end{itemize}
+	\end{itemize}
 	\begin{itemize}
 		\item Beispiele
 		\begin{itemize}
@@ -26,15 +41,24 @@
 			\item 
 		\end{itemize}
 	\end{itemize}
-	\subsection{IT-Unterstützung der Behandlung}
-	\parencite[51]{oswald2019} \parencite[14]{braeutigam2017}
-	\begin{itemize}
-		\item Telemonitoring
-		\item mHealth
-		\item Wearable Computing
-		\item Operations-Roboter
-	\end{itemize}
-	\subsection{IT-Unterstützung der Support- und Managementprozesse/Versorgungsprozesse}
+	\subsection{Behandlungstechnologien}
+		Das Kerngeschäft eines Krankenhauses ist die Behandlung von Patienten. Es gibt einige Technologien, mit denen der Patient direkt in Kontakt kommt.
+		\cite{braeutigam2017} nennt hier Telemonitoring, mHealth, Wearable Computing, Operations- und Pflege-Roboter.
+		\vspace{1ex}\\
+		\textbf{Telemonitoring}\\
+		Durch Telemonitoring kann sich ein Patient den Weg zum Krankenhaus sparen kann, indem er bestimmte Messungen selbst durchführt. So kann z.B. ein Blutdruckpatient seinen eigenen Blutdruck messen und über eine IT-Anwendung digital an den Arzt übermitteln. 
+		\vspace{1ex}\\
+		\textbf{mHealth}\\
+		Eng mit Telemonitoring verbunden ist mHealth. mHealth umfasst Anwendungen auf mobilen Geräten, wie Smartphones, die bei der Behandlung unterstützen. Dabei geht es um das übermitteln von Daten, wie etwa Blutdruck, an einen Arzt aber auch das direkte Messen von gesundheitsrelevanten Daten, wie bei einer Schrittzähler-App. \parencite{Matusiewicz2017}
+		\vspace{1ex}\\
+		\textbf{Wearable Computing}\\
+		Ein weiteres Technologiefeld ist wearable Computing. Die bekannteste Anwendung sind hier Smartwatches, welche bei der Sammlung von Daten, wie Schrittanzahl und Puls helfen können, oder im Fall der Pulsmessung, den Patienten bei einem schlechten Wert warnen können. Wearable Computing umfasst hier aber auch strikt medizintechnische Geräte, die immer häufiger Computer enthalten, um die Steuerung und die Auslesung von Daten zu erleichtern. \parencite{Gerke2017}
+		\vspace{1ex}\\
+		\textbf{Operations- und Pflege-Roboter}\\
+		Schließlich werden in Krankenhäusern Operations- und Pflege-Roboter eingesetzt, um dem Menschen schwere körperliche Arbeit abzunehmen oder Operationen mit einer Präzision durchzuführen, die vorher nicht möglich war. Operations-Roboter versprechen außerdem, dass ein Spezialist eine Operation durchführen kann ohne selbst persönlich anwesend zu sein. Dies kann evtl. kleineren Krankenhäusern helfen, die einen Patienten dann nicht mehr zu einem größeren Krankenhaus überweisen müssen. \parencite{Bardash2010}
+		%\parencite[14]{braeutigam2017}
+		%\parencite[51]{oswald2019} 
+	\subsection{IT-Unterstützung der Versorgungsprozesse}
 	\parencite{oswald2019} \parencite[14]{braeutigam2017}
 	\begin{itemize}
 		\item Krankenhausinformationssystem (KIS)
@@ -93,9 +117,8 @@
 		\end{itemize}
 	\subsection{IT-Report}
 	IT-Report der Uni Osnabrück beschreiben
-\section{Bewertungskriterien und Treibergrößen des Digitalisierungsfortschritts}
-	\subsection{Kennzahlen}
-	\subsubsection{Workflow Composite Score}
+\section{Methoden zur Messung des Digitalisierungsstandes}
+	\subsection{Workflow Composite Score}
 		Aufnahme, Visite, [Op-Vorbereitung, Op-Nachbereitung], Entlassung (ggf. als Grafik)\\
 		% <fig>
 		%\begin{figure}[h]
@@ -114,25 +137,14 @@
 		Bei \textit{Daten und Informationen} geht es um die Vielfalt der elektronisch verfügbaren Patienteninformationen. Teil dieses Deskriptors ist z.B. die Frage ob Patientenstammdaten bei der Aufnahme schon in elektronischer Form vorhanden sind oder ob sie erst manuell aufgenommen werden müssen. \textit{Funktion} erfasst welche IT-Anwendungen zur Verfügung stehen, z.B. ein System zur Belegesteuerung, aber auch das Vorhandensein von WLAN. Inwieweit diese Anwendungen miteinander verknüpft sind zeigt der Deskriptor \textit{Integration} auf. \textit{Distribution} sind die Mittel mit denen Informationen an ihre Nutzer gebracht werden. Können Pflegekräfte Patientendaten nur an einem PC einsehen oder gibt es Tablets, die einfacher mit auf ein Zimmer genommen werden können?
 
 		Für die Schnittstelle
-	\subsubsection{ICS}
-	\subsubsection{PIMCS}
-	\subsubsection{EMRAM}
+	\subsection{ICS}
+	\subsection{PIMCS}
+	\subsection{EMRAM}
 	\parencite{Stephani2019}
-	\subsection{Treibergrößen (definieren und gemeinsames Verständnis definieren)}
-	\begin{itemize}
-		\item Hoffnungen \parencite[15]{braeutigam2017}
-		\begin{itemize}
-			\item die Verbesserung der Versorgungsqualität
-			\item die Erleichterung der Dokumentation
-			\item Verbesserung bei Organisation und Kommunikation
-			\item Qualitätssteigerungen bei Diagnostik und Therapie, insbesondere bei Operationen
-			\item Zeitersparnis
-			\item mehr Zeit für den direkten Patientenkontakt vor allem in der Pflege
-			\item Entlastung von Routineaufgaben
-			\item Entlastung von körperlich anstrengenden Tätigkeiten
-			\item Fernbetreuung von Patienten
-		\end{itemize}
-	\end{itemize}
+\section{Aktueller Stand der Digitalisierung in deutschen Krankenhäuser} \label{sec:stand in deutschland}
+	\subsection{Aktueller Stand bzgl. Bewertungskriterien}
+		Veränderung von 2018 zu 2020
+	\subsection{Treibergrößen für Digitalisierung in Deutschland}
 	\begin{itemize}
 		\item Methodik
 		\begin{itemize}
@@ -140,16 +152,23 @@
 			\item (mind. 0,05 Signifikanz des Mittelwertunterschieds)
 		\end{itemize}
 	\end{itemize}
-\section{Aktueller Stand der Digitalisierung in deutschen Krankenhäuser} \label{sec:stand in deutschland}
-	\subsection{Aktueller Stand bzgl. Bewertungskriterien}
-		Veränderung von 2018 zu 2020
-	\subsection{Treibergrößen für Digitalisierung in Deutschland}
 	\begin{itemize}
 		\item Verbundstatus \parencite{cresswell2013}
 		\item Lehrstatus
 		\item OP
 		\item Größe \parencite{cresswell2013}
 		\item nicht: Trägerschaft \parencite{cresswell2013}
+	\end{itemize}
+	\begin{itemize}
+		\item Zusammenarbeite der klinischen Anwender und IT-Mitarbeiter
+		\item Vertrauen und gute Kommunikation zwischen IT und Krankenhausleitung
+		\item Interne und externe Partnerschaften
+		\begin{itemize}
+			\item Zusammenarbeit mit IT-Herstellern
+			\item zentrale IT-Abteilung
+		\end{itemize}
+		\item Eigenverantwortlichkeit der einzelnen Abteilungen
+		\item Innovationskraft
 	\end{itemize}
 	\subsection{Defizite / Defizitbereiche}
 	\begin{itemize}
@@ -166,6 +185,6 @@
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{3}
-\printbibliography
-\addcontentsline{toc}{section}{Literaturverzeichnis}
+%\printbibliography
+%\addcontentsline{toc}{section}{Literaturverzeichnis}
 \end{document}
