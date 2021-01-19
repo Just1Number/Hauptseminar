@@ -18,7 +18,8 @@ Treibergrößen und Defizitbereiche in Deutschland}
 \usepackage[german]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[margin=23mm,bottom=30mm]{geometry}
-\usepackage{graphicx, xcolor, wrapfig, helvet, titlesec, fancyhdr}
+\usepackage[table,usenames,dvipsnames]{xcolor}
+\usepackage{graphicx, wrapfig, helvet, titlesec, fancyhdr}
 \usepackage[germankw,german]{algorithm2e}
 \usepackage{tikz}
 \usepackage{tikz-qtree}
@@ -39,7 +40,7 @@ Treibergrößen und Defizitbereiche in Deutschland}
 	pdfborder={0 0 0} % entfernt hässliche Kästen um Links
 }
 \usepackage[%
-  backend=bibtex      % biber or bibtex
+  backend=biber      % biber or bibtex
  ,style=authortitle
  ,citestyle=authoryear-comp %authoryear-icomp
  % ,sorting=none        % no sorting
@@ -66,6 +67,10 @@ Treibergrößen und Defizitbereiche in Deutschland}
 
 % define color used for titels. Offical color of the thm
 \definecolor{thmgrey}{HTML}{4a5c66}
+\definecolor{green}{HTML}{4E9A06}
+
+% sets the vspace ahead of a paragraph headline (unnumbered subsection)
+\newcommand\parheadvspace{1ex}
 
 % set font to Arial look-alike helvet
 \renewcommand{\familydefault}{\sfdefault}
