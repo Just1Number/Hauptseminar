@@ -1,33 +1,31 @@
 % !TEX root = ../main.tex
-Erster Satz. Im Krankenhaus gibt es enormes Potential für digitale Anwendungen. 
+\subsection{Chancen und Risiken}
+Digitalisierung birgt viele Chancen der Verbesserung der Abläufe in einem Krankenhaus. Diese reichen von der Organisation bis hin zu medizinisch fachlichen Innovationen (Siehe Tabelle \ref{tab:hoffnung_risiken}). So wird eine Erleichterung der Dokumentation und eine Verbesserung der Kommunikation versprochen. Das Personal soll bei körperlich anstrengenden Tätigkeiten und Routineaufgaben entlastet werden. Die dadurch gewonnene Zeit wird bestenfalls für den direkten Patientenkontakt genutzt. Durch neue Technologien wie Operationsroboter kann die Diagnostik und Behandlung direkt verbessert oder in manchen Fällen erst möglich gemacht werden. Außerdem können sich Patienten evtl. den Weg zum Krankenhaus komplett sparen, wenn sie aus der Ferne betreut werden können. \parencite{braeutigam2017}
 
-Krankenhaus ähnlich wie hochspezialisiertes produzierendes Unternehmen
-
-Es gibt verschiedene Ansätze die im Krankenhaus angewandten Technologien einzuteilen
-
-Chancen / Risiken (evtl zusätzlich Tabelle zum gegenüberstellen)
-\subsection{Treibergrößen}
-\begin{itemize}
-	\item Hoffnungen \parencite[15]{braeutigam2017}
-	\begin{itemize}
-		\item die Verbesserung der Versorgungsqualität
-		\item die Erleichterung der Dokumentation
-		\item Verbesserung bei Organisation und Kommunikation
-		\item Qualitätssteigerungen bei Diagnostik und Therapie, insbesondere bei Operationen
-		\item Zeitersparnis
-		\item mehr Zeit für den direkten Patientenkontakt vor allem in der Pflege
-		\item Entlastung von Routineaufgaben
-		\item Entlastung von körperlich anstrengenden Tätigkeiten
-		\item Fernbetreuung von Patienten
-	\end{itemize}
-\end{itemize}
-\begin{itemize}
-	\item Beispiele
-	\begin{itemize}
-		\item "Beispielweise wird Software angeboten, die aufgrund eingespeister Informationen zu einzelnen Patienten Pflegemaßnahmen vorgibt. Im ärztlichen Bereich wird die Standardisierung, Automatisierung und Kontrolle bei chirurgischen Eingriffen thematisiert." \parencite[16]{braeutigam2017}
-		\item 
-	\end{itemize}
-\end{itemize}
+Gleichzeitig gibt es, wie bei jedem Fortschritt, Risiken, die es zu beachten gilt. So kann eine zunehmend digitale Datenlagerung die Datensicherheit reduzieren. Grade im medizinischen Bereich ist diese von enormer Wichtigkeit. Es gibt beim Personal die Befürchtung, das eventuelle Zeitersparnis nicht dem Patienten zu gute kommt sondern zu einer Reduzierung von Arbeitsplätzen führt. Die neuen Aufgaben, die das Personal bewältigen muss, sind komplex und durch intensivere Dokumentation und daraus folgende Überwachung kann der Leistungsdruck steigen. Neue medizintechnische Technologien erfordern neue Kompetenzen und neue Systeme sind störanfällig. \parencite{braeutigam2017}
+\begin{table}[h]
+	\begin{tabular}{l|p{.4\textwidth}|p{.4\textwidth}}
+	\textbf{Bereiche}&\textbf{Chancen}&\textbf{Risiken}\\
+	\hline
+	\multirow{3}{*}{Organisation}
+		&$\bullet$ die Erleichterung der Dokumentation &$\bullet$ mangelnde Datensicherheit\\
+		&$\bullet$ Verbesserung bei Organisation und Kommunikation &$\bullet$ fehlende Akzeptanz der Beschäftigten\\
+	\hline
+	\multirow{7}{*}{Personal}
+		&$\bullet$ Entlastung von körperlich anstrengenden Tätigkeiten &$\bullet$ wachsender Leistungsdruck und zusätzliche Aufgaben\\
+		&$\bullet$ Entlastung von Routineaufgaben &$\bullet$ Überforderung der Beschäftigten\\
+		&$\bullet$ Zeitersparnis&$\bullet$ zunehmende Kontrolle und Fremdbestimmung bei der Arbeit\\
+		&&$\bullet$ Substitution von Tätigkeiten und Arbeitsplatzverluste\\
+	\hline
+	\multirow{6}{*}{Fachlich}
+		&$\bullet$ Fernbetreuung von Patienten&$\bullet$ Störanfälligkeit\\
+		&$\bullet$ die Verbesserung der Versorgungsqualität &$\bullet$ mangelnde Kompetenz bei Beschäftigten\\
+		&$\bullet$ Qualitätssteigerungen bei Diagnostik und Therapie, insbesondere bei Operationen&\\
+		&$\bullet$ mehr Zeit für den direkten Patientenkontakt vor allem in der Pflege&\\
+	\end{tabular}
+	\caption{Zusammenstellung der Hoffnungen und Risiken der Digitalisierung an Krankenhäusern \parencite{braeutigam2017}}
+	\label{tab:hoffnung_risiken}
+\end{table}
 \subsection{Behandlungstechnologien}
 	Das Kerngeschäft eines Krankenhauses ist die Behandlung von Patienten. Es gibt einige Technologien, mit denen der Patient direkt in Kontakt kommt.
 	\cite{braeutigam2017} nennt hier Telemonitoring, mHealth, Wearable Computing, Operations- und Pflege-Roboter.
@@ -70,6 +68,7 @@ Chancen / Risiken (evtl zusätzlich Tabelle zum gegenüberstellen)
 	\item Location Based Services \parencite{mci/Leimeister2006}
 \end{itemize}
 \subsection{IT-Unterstützung der klinischen Prozesse}
+\label{sec:klinischeProzesse}
 % <fig>
 % \begin{figure}[h]
 % 	\centering

@@ -1,21 +1,42 @@
 % !TEX root = ../main.tex
-\subsection{Aktueller Stand bzgl. Bewertungskriterien}
-	Veränderung von 2018 zu 2020
+\subsection{IT-Report Gesundheitswesen 2018}
+Der IT-Report Gesundheitswesen wird seit 2002 von der Forschungsgruppe Informatik im Gesundheitswesen (IGW) an der Hochschule Osnabrück veröffentlicht. Es handelt sich dabei um die Vorstellung der Ergebnisse einer Umfrage, die sich an leitende Personen in Krankenhäusern richtet. Ziel des IT-Report Gesundheitswesen ist es Informationen über den aktuellen Stand der Nutzung von IT-Systemen zur Verfügung zu stellen und Trends im Zeitverlauf darzustellen. Dabei richtet er sich an ein breites Publikum, von Einrichtungen des Gesundheitswesens und der Wissenschaft bis hin zur IT-Industrie und der Politik.\parencite{huebner2019}
+
+Der Stand der Digitalisierung in Deutschland wird hier anhand des IT-Report Gesundheitswesen 2018 \parencite{huebner2018} und der Analyse des selbigen aus \cite{huebner2019}, vorgestellt. Dem IT-Report Gesundheitswesen 2018 liegt eine Umfrage zugrunde, dessen Feldzeit vom 1.12.2016 bis zum 14.5.2017 lief. Insgesamt wurden 1349 IT-Verantwortliche per E-Mail angeschrieben, die für 1950 Krankenhäuser zuständig waren. Laut statista gab es im Jahr 2016 1951 Krankenhäuser in Deutschland\footnote{https://de.statista.com/statistik/daten/studie/2617/umfrage/anzahl-der-krankenhaeuser-in-deutschland-seit-2000/}, es wurde also versucht alle Krankenhäuser zu erreichen. 224 der Angeschriebenen haben aktiv teilgenommen, dies entspricht einer Rücklaufquote von $18,3\%$. Die Umfrage bestand aus 101 Fragen, die eingeteilt wurden in Fragen über die IT-Unterstützung der klinischen Prozesse (vgl. Kapitel \ref{sec:klinischeProzesse}), den Umsetzungsgrad der elektronischen Patientenakte, das IT-Management und allgemeine IT-Funktionen.
+
+Zusätzlich wurde für jede Antwort ein Workflow Composite Score (WCS), Professionalism of Information Management Composite Score (PIMCS) und Innovation Capability Composite Score (ICCS) ermittelt. Diese stehen aufbereitet als Statistik zur Verfügung.
+\subsection{Defizitbereiche in Deutschland}
+\label{sec:defizit_deutschland}
+% <fig>
+\begin{wrapfigure}{l}{0.45\textwidth}
+ 	%\includegraphics[width=0.4\textwidth]{Bilder/stand_de_WCS_Hübner_2019.png}
+	\caption{Workflow Composite Scores und Sub-Scores der deutschen Krankenhäuser 2017 \parencite[39]{huebner2019}}
+	\label{fig:stand_de_WCS}
+\end{wrapfigure}
+Um eine Übersicht über den IT-Report Gesundheitswesen 2018 zu bekommen, werden die drei verschiedenen Composite Scores betrachtet, die auf Grundlage der Studie errechnet wurden. Für jeden der Scores sind Mittelwert, Standardabweichung, kleinster und größter Wert angegeben, sowie das selbe für die jeweiligen Sub-Scores.
+\vspace{\parheadvspace}\\
+\textbf{Workflow Composite Score}\\
+Der WCS (siehe Abbildung \ref{fig:stand_de_WCS}) konnte für 205 Krankenhäuser errechnet werden, von denen nur 36 keinen OP haben. Nach der Methodik des WCS werden die beiden Sub-Scores nur die Prozesse Aufnahme, Visite und Entlassung betrachtet. Der Mittelwert von 55 bei den Gesamtscores zeigt ein ehr mittelmäßiges Niveau in Deutschland auf. Von den klinischen Prozessen schneidet die Aufnahme am schlechtesten ab, während die OP Prozesse, vor allem die OP-Vorbereitung, die höchsten Werte erreichen. Nahe am Gesamtdurchschnitt sind Visite und Entlassung. Von den Deskriptoren ist Funktion am besten und Distribution am schlechtesten. Bei genauerer Betrachtung des Deskriptoren Funktion zeigt sich allerdings, das zwar viele Basisanwendungen wie Dokumentationsfunktionen oder Funktionen für die Leistungsanforderung und Befundrückmeldung existieren, aber erweiterte Anwendungen wie Funktionen zur Entscheidungsunterstützung meist besten Falls \glqq in Planung\grqq{ }sind. Im Bereich Daten und Informationen wird schon viel Digital gearbeitet, es gibt aber immer noch ganze Datenklassen, wie Checklisten oder auffällige Werte, die selten digital vorliegen. Distribution schneidet am schlechtesten ab und dies liegt unter anderem an einem Mangel an mobilen Endgeräten. In dem meisten Fällen wir mit einem klassischen PC auf digitale Daten zugegriffen. Neuere Geräte, wie Tablets, Smartphones/PDAs oder bedside Terminals, sind rar. \parencite{huebner2019}
+\begin{wrapfigure}{r}{0.45\textwidth}
+	%\includegraphics[width=0.4\textwidth]{Bilder/stand_de_PIMCS_ICCS_Hübner_2019.png}
+	\caption{Mittelwert und Standardabweichung für den PIMCS und ICSS \parencite{huebner2019}}
+	\label{fig:stand_de_PIMCS_ICCS}
+\end{wrapfigure}
+\vspace{\parheadvspace}\\
+\textbf{Professionalism of Information Management Composite Score}\\
+Ähnlich wie beim WCS schneiden deutsche Krankenhäuser beim PIMCS (Abbildung \ref{fig:stand_de_PIMCS_ICCS}) mit einem Durchschnitt von 49 aus 100 mittelmäßig ab. Dabei sind die Defizitbereiche auf der taktische und insbesondere auf der strategischen Ebene. So wird der potentielle Nutzen von IT-Funktionen selten untersucht und Evaluation der IT-Landschaft findet selten statt. Das Prinzip der IT-Governance wird an deutschen Krankenhäusern selten angewandt.
+\vspace{\parheadvspace}\\
+\textbf{Innovation Capability Composite Score}\\
+Dieses Bild verdeutlicht sich bei der Betrachtung des ICCS. Hier wird ein Mangel an Intrapreneurship der IT-Leitung und eine wenig innovationsfreudige Unternehmenskultur aufgedeckt. Ein Grund dafür ist, dass die IT häufig keine führende Rolle in den Krankenhäusern hat, sondern lediglich die klinische und wirtschaftliche Leitung der Krankenhäuser berät. Zusätzlich sind neue IT-Entwicklung auf einer niedrigen Priorität für ohnehin knappe Finanzierung. Gut schneidet hier die Offenheit gegenüber Anwendern ab: IT-Abteilungen sind also größtenteils gut in das Gesamtunternehmen integriert.
 \subsection{Treibergrößen für Digitalisierung in Deutschland}
-\begin{itemize}
-	\item Methodik
-	\begin{itemize}
-		\item Betrachtung des WCS über KH-Attribute (z.B. Trägerschaft)
-		\item (mind. 0,05 Signifikanz des Mittelwertunterschieds)
-	\end{itemize}
-\end{itemize}
-\begin{itemize}
-	\item Verbundstatus \parencite{cresswell2013}
-	\item Lehrstatus
-	\item OP
-	\item Größe \parencite{cresswell2013}
-	\item nicht: Trägerschaft \parencite{cresswell2013}
-\end{itemize}
+Der IT-Report Gesundheitswesen 2018 enthält zusätzlich Information über die Demographie der befragten Krankenhäuser. So wurde ermittelt ob das entsprechende Krankenhaus in einem Verbund ist, einen Lehrstatus hat, einen OP hat und die Art der Trägerschaft. Damit konnte der Unterschied des Mittelwertes des WCS zwischen verschiedenen Krankenhaustypen ermittelt werden. Das ergab, das Krankenhäuser mit OP und Universitätskrankenhäuser im Schnitt einen signifikant höheren WCS haben. Auch der Verbundsstatus, sowie die Größe des Krankenhaus, gemessen anhand der stationären Fälle, hat einen positiven Effekt. \parencite{huebner2019}
+Ein signifikanter Unterschied zwischen private und öffentlicher Trägerschaft konnte nicht festgestellt werden. Allerdings konnten andere Studien zeigen, dass private Trägerschaft die Digitalisierung fördert. \cite{cresswell2013} 
+
+Weiterhin wurden einige Merkmale stark digitalisierter Krankenhäuser ermittelt.
+\vspace{\parheadvspace}\\
+\textbf{Innovationskraft}\\
+\vspace{\parheadvspace}\\
+\textbf{Zusammenarbeit der klinischen Anwender und der IT-Mitarbeiter}\\
 \begin{itemize}
 	\item Zusammenarbeite der klinischen Anwender und IT-Mitarbeiter
 	\item Vertrauen und gute Kommunikation zwischen IT und Krankenhausleitung
@@ -26,10 +47,4 @@
 	\end{itemize}
 	\item Eigenverantwortlichkeit der einzelnen Abteilungen
 	\item Innovationskraft
-\end{itemize}
-\subsection{Defizite / Defizitbereiche}
-\begin{itemize}
-	\item IT-Governance
-	\item Distribution von Daten (Endgeräte)
-	\item Politik-Gedöns
 \end{itemize}

@@ -1,10 +1,8 @@
 % !TEX root = ../main.tex
 Um die Digitalisierung der deutschen Krankenhauslandschaft im internationalem Vergleich zu sehen, werden hier Deutschland, Österreich und die deutschsprachige Schweiz miteinander verglichen. Datengrundlage des Vergleichs ist der IT-Report Gesundheitswesen 2020 der Hochschule Osnabrück.
-\subsection{IT-Report Gesundheitswesen}
-Der IT-Report Gesundheitswesen wird seit 2002 von der Forschungsgruppe Informatik im Gesundheitswesen (IGW) an der Hochschule Osnabrück veröffentlicht. Es handelt sich dabei um die Vorstellung der Ergebnisse einer Umfrage, die sich an leitende Personen in Krankenhäusern richtet. \parencite{huebner2019}
-
-Für diesen Ländervergleich wird der IT-Report Gesundheitswesen 2020 herangezogen, in welchem nicht nur deutsche Krankenhäuser, sondern auch Krankenhäuser aus Österreich und der Schweiz, zum Thema Digitalisierung befragt wurden. Die Umfrage fand im Jahr 2017 vom 1.7. bis zum 14.12. statt und bestand aus 87 Fragen, gerichtet an ärztliche und pflegerische Direktoren.
-\begin{figure}[h]
+\subsection{IT-Report Gesundheitswesen 2020}
+Für diesen Ländervergleich wird der IT-Report Gesundheitswesen 2020 herangezogen, in welchem nicht nur deutsche Krankenhäuser, sondern auch Krankenhäuser aus Österreich und der Schweiz, zum Thema Digitalisierung befragt wurden. Die Umfrage fand im Jahr 2017 vom 1.7. bis zum 14.12. statt und bestand aus 87 Fragen, gerichtet an ärztliche und pflegerische Direktoren. Insgesamt wurden 2421 Krankenhäuser angeschrieben, davon 1951 in Deutschland, 260 in Österreich und 211 aus der deutschsprachigen Schweiz \parencite{huebner2020}. Laut statista gab es im Jahr 2017 1942 Krankenhäuser in Deutschland\footnote{https://de.statista.com/statistik/daten/studie/2617/umfrage/anzahl-der-krankenhaeuser-in-deutschland-seit-2000/}, 271 Krankenhäuser in Österreich\footnote{https://de.statista.com/statistik/daten/studie/298568/umfrage/oesterreic-hanzahl-der-krankenhaeuser-seit-1985/} und 281 Krankenhäuser in der Schweiz\footnote{https://de.statista.com/statistik/daten/studie/306939/umfrage/anzahl-der-krankenhaeuser-in-der-schweiz/}. Es wurden also fasst alle Krankenhäuser in den drei Regionen angeschrieben. Antworten kamen aus 608 Krankenhäusern, davon 492 aus Deutschland (Rücklaufquote $25,2\%$), 49 aus Österreich ($18,8\%$), 67 aus der deutschsprachigen Schweiz ($31,8\%$) . Eine Übersicht über diese Zahlen befindet sich in Tabelle \ref{tab:anzahl-krankenhaeuser}. 
+\begin{table}[h]
 \begin{center}
 	\begin{tabular}{l|c|c|c|l}
 		&Angeschrieben&\parbox[c]{13ex}{\centering Krankenhäuser\\ insgesamt}&Antworten&Rücklaufquote\\
@@ -16,8 +14,7 @@ Für diesen Ländervergleich wird der IT-Report Gesundheitswesen 2020 herangezog
 \end{center}
 \caption{Übersicht über befragte Krankenhäuser}	
 \label{tab:anzahl-krankenhaeuser}
-\end{figure}
-Insgesamt wurden 2421 Krankenhäuser angeschrieben, davon 1951 in Deutschland, 260 in Österreich und 211 aus der deutschsprachigen Schweiz \parencite{huebner2020}. Laut statista gab es im Jahr 2017 1942 Krankenhäuser in Deutschland\footnote{https://de.statista.com/statistik/daten/studie/2617/umfrage/anzahl-der-krankenhaeuser-in-deutschland-seit-2000/}, 271 Krankenhäuser in Österreich\footnote{https://de.statista.com/statistik/daten/studie/298568/umfrage/oesterreic-hanzahl-der-krankenhaeuser-seit-1985/} und 281 Krankenhäuser in der Schweiz\footnote{https://de.statista.com/statistik/daten/studie/306939/umfrage/anzahl-der-krankenhaeuser-in-der-schweiz/}. Es wurden also fasst alle Krankenhäuser in den drei Regionen angeschrieben. Antworten kamen aus 608 Krankenhäusern, davon 492 aus Deutschland (Rücklaufquote $25,2\%$), 49 aus Österreich ($18,8\%$), 67 aus der deutschsprachigen Schweiz ($31,8\%$) . Eine Übersicht über diese Zahlen befindet sich in Tabelle \ref{tab:anzahl-krankenhaeuser}.
+\end{table}
 
 TODO Übersicht über Fragen
 
@@ -91,16 +88,19 @@ In der Studie wurde kein intensiver wertender Vergleich durchgeführt. Daher wur
 % 	\item Für jede Frage wird entschieden was einen Digitalisierungsfortschritt darstellt
 % \end{itemize}
 \subsection{Gegenüberstellung der Länder}
-\begin{tabular}{l|c|c|c}
-&Deutschland&Österreich&Schweiz\\
-\hline
-Aufnahme&0&2&3\\
-Visite&0&4&5\\
-OP-Vorbereitung&2&1&1\\
-OP-Nachbereitung&5&0&0\\
-Entlassung&0&2&4\\
-Zufriedenheit&1&1&4\\
-\end{tabular}
+% \begin{tabular}{l|c|c|c}
+% &Deutschland&Österreich&Schweiz\\
+% \hline
+% Aufnahme&0&2&3\\
+% Visite&0&4&5\\
+% OP-Vorbereitung&2&1&1\\
+% OP-Nachbereitung&5&0&0\\
+% Entlassung&0&2&4\\
+% Zufriedenheit&1&1&4\\
+% \end{tabular}
+Bei der gewählten Methodik ist zwar erkennbar welches Land die meisten Fragen gewonnen hat, aber nicht wie stark. Diese Ergebnisse geben also nur eine vergleichende und keine Qualitative Übersicht. Die Gegenüberstellung erfolgt nach der Struktur, die im IT-Report Gesundheitswesen 2020 vorgegeben ist. So werden zuerst die klinischen Prozesse betrachtet und anschließend verschiedene IT-Funktionstypen und das IT-Management.
+	\vspace{\parheadvspace}\\
+	\textbf{klinische Prozesse}\\
 \begin{itemize}
 	\item Gewinner vorstellen
 	\item Gemeinsamkeiten und Unterschiede aufzeigen
