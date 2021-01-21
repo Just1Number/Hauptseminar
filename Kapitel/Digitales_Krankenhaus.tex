@@ -42,54 +42,64 @@ Gleichzeitig gibt es, wie bei jedem Fortschritt, Risiken, die es zu beachten gil
 	\textbf{Operations- und Pflege-Roboter}\\
 	Schließlich werden in Krankenhäusern Operations- und Pflege-Roboter eingesetzt, um dem Menschen schwere körperliche Arbeit abzunehmen oder Operationen mit einer Präzision durchzuführen, die vorher nicht möglich war. Operations-Roboter versprechen außerdem, dass ein Spezialist eine Operation durchführen kann ohne selbst persönlich anwesend zu sein. Dies kann evtl. kleineren Krankenhäusern helfen, die einen Patienten dann nicht mehr zu einem größeren Krankenhaus überweisen müssen. \parencite{Bardash2010}
 	%\parencite[14]{braeutigam2017}
-	%\parencite[51]{oswald2019} 
+	%\parencite[51]{oswald2019}
 \subsection{IT-Unterstützung der Versorgungsprozesse}
-\parencite{oswald2019} \parencite[14]{braeutigam2017}
-\begin{itemize}
-	\item Krankenhausinformationssystem (KIS)
+Die Steuerung der Support- und Managementprozesse der Versorgung ist ein Bereich in dem bereits intensiv IT-Anwendungen eingesetzt werden. Dabei gibt es für einzelne Abteilungen Lösungen, die spezielle Probleme des Feldes lösen. Damit hier abteilungsübergreifend gearbeitet werden kann ist ein Krankenhausinformationssystem (KIS) nötig, dass die Daten dieser Untersysteme zentral zur Verfügung stellt. Das KIS regelt auch welches Personal Zugriff auf welche Daten hat. 
 
-	\begin{itemize}
-		\item Integriert Systeme des Krankenhauses
-		\item 
-	\end{itemize}
-	\item Elektronische Patientenakte (EPA)
-	\begin{itemize}
-		\item Ein zentraler Ort an dem alle Patientendaten gespeichert werden. Ziel ist es alle benötigten Informationen, wie Stamm- und Falldaten, einfach elektronisch verfügbar zu machen. Um die Akte effizient nutzen zu können ist ein standardisiertes Format wichtig \parencite[62]{oswald2019}.
-	\end{itemize}
-	\item Patientendatenmanagement (PDMS)
-	\begin{itemize}
-		\item 
-	\end{itemize}
-	\item Labor-Informationssysteme (LIS)
-	\item Radiologie-Informationssystem (RIS)
-	\item Picture Archiving and Communication System (PACS): Bildarchivierungs- und Kommunikationssystem
-	\item Cumputerized Physician Order Entry (CPOE): elektronische Arzneimittelverordnung
-	\item WLAN
-	\item Location Based Services \parencite{mci/Leimeister2006}
-\end{itemize}
+Informationen von Patienten sollen in einer elektronischen Patientenakte (ePA) verwaltet werden. Dies ist ein zentraler Ort an dem alle Patientendaten gespeichert werden. Ziel ist es alle benötigten Informationen, wie Stamm- und Falldaten, einfach elektronisch verfügbar zu machen. Um die Akte effizient nutzen zu können ist ein standardisiertes Format wichtig \parencite{oswald2019}. Die ePA ist Teil eines Patientendatenmanagementsystems (PDMS). 
+
+Spezialisierte Abteilungen haben ihre eigenen Informationssysteme, wie das Labor-Informationssystem (LIS) und das Radiologie-Informationssystem (RIS), die auf die Bedürfnisse der jeweiligen Abteilungen zugeschnitten sind.
+
+Im Krankenhaus entstehen viele Daten in Form von Bildern. Diese müssen unter Umständen für längere Zeit gespeichert werden, für das ein Picture Archiving and Communication System (PACS) verwendet werden kann. 
+
+Weitere IT-Lösungen sind die elektronische Arzneimittelverordnung (Cumputerized Physician Order Entry -- CPOE), die zusätzlich durch ein System zur Erstellung eines Medikationsplans unterstützt werden kann, und der elektronische Arztbrief, der die Kommunikation mit niedergelassenen Ärzten vereinfachen soll. \parencite{braeutigam2017}
+
+Zusätzlich bietet eine Robuste IT-Infrastruktur neue Möglichkeiten. So können Daten bei ausgebautem WLAN auch auf mobilen Geräten, und somit an dem Ort an dem sie gebraucht werden, aufgerufen werden. Außerdem kann mit Hilfe von Location Based Services ein ortsunabhängiges Medizingerätemanagement verwirklicht werden \parencite{mci/Leimeister2006}.
+% \begin{itemize}
+% 	\item Krankenhausinformationssystem (KIS)
+
+% 	\begin{itemize}
+% 		\item Integriert Systeme des Krankenhauses
+% 	\end{itemize}
+% 	\item Elektronische Patientenakte (EPA)
+% 	\begin{itemize}
+% 		\item 
+% 	\end{itemize}
+% 	\item Patientendatenmanagement (PDMS)
+% 	\begin{itemize}
+% 		\item 
+% 	\end{itemize}
+% 	\item Labor-Informationssysteme (LIS)
+% 	\item Radiologie-Informationssystem (RIS)
+% 	\item Picture Archiving and Communication System (PACS): Bildarchivierungs- und Kommunikationssystem
+% 	\item Cumputerized Physician Order Entry (CPOE): elektronische Arzneimittelverordnung
+% 	\item WLAN
+% 	\item Location Based Services \parencite{mci/Leimeister2006}
+% \end{itemize}
 \subsection{IT-Unterstützung der klinischen Prozesse}
 \label{sec:klinischeProzesse}
+	Eine anderer Blickwinkel auf die IT-Funktionen im Krankenhaus ergibt sich aus Richtung der klinischen Prozesse (Abbildung \ref{fig:kernprozesse}). Der IT-Report Gesundheitswesen \parencite{huebner2019} nennt hier 5 Kernprozesse: Die Aufnahme, Visite, OP-Vor- und Nachbereitung und die Entlassung.
 % <fig>
-% \begin{figure}[h]
-% 	\centering
+ \begin{figure}[h]
+ 	\centering
 % 	\includegraphics[0.8\textwidth]{Bilder/klinische_Kernprozesse_Hübner_2018_S41.png}		
-% 	\caption{Die klinischen Kernprozesse \parencite[41]{huebner2018}}
-% 	\label{fig:kernprozesse}
-% \end{figure}
-	\begin{itemize}
-		\item Aufnahme, Visite, [OP-Vorbereitung, OP-Nachbereitung], Entlassung (ggf. als Grafik) \parencite[37]{huebner2019}
-		\item Im Prozess \textit{Aufnahme} wird ein Patient in das Krankenhaus aufgenommen. Dabei ist es wichtig die Stammdaten und evtl. auch Falldaten zu übernehmen. Für bestmögliche IT-Unterstützung sollen diese direkt digital übernommen werden. 
-		\item \textit{Visite} ist der Besuch eines Patienten auf einem Zimmer durch einen Arzt. Hier wird der Begriff etwas ausgedehnt und beinhaltet alle Interaktionen des klinischen Personals mit den Patienten auf Station. Im Gegensatz zur Aufnahme, wo vermutet werden kann, dass datenverarbeitendes Personal Zugang zu einem PC hat, ist es bei der Visite hilfreich, wenn mobile Datenzugänge, wie Notebooks, Tablets oder bedside Terminals, zur Verfügung stehen. Um diese Geräte sinnvoll nutzen zu können ist ein ausreichend ausgebautes krankenhausinternes WLAN nötig.
-		\item \textit{OP-Vorbereitung} beschreibt die Planung einer Operation (OP). Das beinhaltet Termin-, Personal- und Raumplanung aber auch die Informationslogistik, dass die für die OP nötigen Daten dem Personal zur richtigen Zeit zur Verfügung stehen. Dies kann beschleunigt werden, wenn die Daten schon in elektronischer Form vorliegen und durch ein integriertes Krankenhausinformationssystem einfach entnommen werden können.
-		\item Ähnlich wie in der OP-Vor- geht es in der \textit{OP-Nachbereitung} um die Schnittstelle zwischen OP und anderen Prozessen. Daten die während einer OP generiert wurden sollen an nachstehende Prozesse weitergeleitet werden. Dies so weit wie möglich zu automatisieren ist Aufgabe der IT, indem diese Daten z.B. direkt in eine elektronische Fallakte übernommen werden.
-		\item Der Prozess \textit{Entlassung} beschreibt das Ende der stationären Behandlung eines Patienten. Hier müssen evtl. Patientendaten, die während des Aufenthalts entstanden sind, an niedergelassene Ärzte, in Form eines Arztbriefes, weitergeleitet werden. 
-		\begin{itemize}
-			\item Kommunikation mit Patienten
-			\item Erstellung eines Medikationsplans für Patienten
-			\item Kommunikation mit ambulanten Gesundheitsdienstleistern
-			\item Digitales Diktat ? Was ist ein Diktat?
-		\end{itemize}
-	\end{itemize}
-	\begin{itemize}
-	\item In den Kapiteln \ref{sec:stand in deutschland} und \ref{sec:laendervergleich} wird die Sicht der IT auf die klinischen Prozesse für die Analyse in Deutschland und den Ländervergleich mit Österreich und der Schweiz herangezogen.
-	\end{itemize}
+ 	\caption{Die klinischen Kernprozesse \parencite[41]{huebner2018}}
+ 	\label{fig:kernprozesse}
+ \end{figure}
+	\vspace{\parheadvspace}\\
+	\textbf{Aufnahme}\\
+		Im Prozess Aufnahme wird ein Patient in das Krankenhaus aufgenommen. Dabei ist es wichtig die Stammdaten und evtl. auch Falldaten zu übernehmen. Für bestmögliche IT-Unterstützung sollen diese direkt digital übernommen werden.
+	\vspace{\parheadvspace}\\
+	\textbf{Visite}\\
+		Visite ist der Besuch eines Patienten auf einem Zimmer durch einen Arzt. Hier wird der Begriff etwas ausgedehnt und beinhaltet alle Interaktionen des klinischen Personals mit den Patienten auf Station. Im Gegensatz zur Aufnahme, wo vermutet werden kann, dass datenverarbeitendes Personal Zugang zu einem PC hat, ist es bei der Visite hilfreich, wenn mobile Datenzugänge, wie Notebooks, Tablets oder bedside Terminals, zur Verfügung stehen. Um diese Geräte sinnvoll nutzen zu können ist ein ausreichend ausgebautes krankenhausinternes WLAN nötig.
+	\vspace{\parheadvspace}\\
+	\textbf{OP-Vorbereitung}\\
+		OP-Vorbereitung beschreibt die Planung einer Operation (OP). Das beinhaltet Termin-, Personal- und Raumplanung aber auch die Informationslogistik, dass die für die OP nötigen Daten dem Personal zur richtigen Zeit zur Verfügung stehen. Dies kann beschleunigt werden, wenn die Daten schon in elektronischer Form vorliegen und durch ein integriertes Krankenhausinformationssystem einfach entnommen werden können.
+	\vspace{\parheadvspace}\\
+	\textbf{OP-Nachbereitung}\\
+		Ähnlich wie in der OP-Vor- geht es in der OP-Nachbereitung um die Schnittstelle zwischen OP und anderen Prozessen. Daten die während einer OP generiert wurden sollen an nachstehende Prozesse weitergeleitet werden. Dies so weit wie möglich zu automatisieren ist Aufgabe der IT, indem diese Daten z.B. direkt in eine elektronische Fallakte übernommen werden.
+	\vspace{\parheadvspace}\\
+	\textbf{Entlassung}\\
+		Der Prozess Entlassung beschreibt das Ende der stationären Behandlung eines Patienten. Hier müssen evtl. Patientendaten, die während des Aufenthalts entstanden sind, an niedergelassene Ärzte weitergeleitet werden. Dies kann in Form eines elektronischen Arztbriefes geschehen. 
+
+	In den Kapiteln \ref{sec:stand in deutschland} und \ref{sec:laendervergleich} wird die Sicht der IT auf die klinischen Prozesse für die Analyse in Deutschland und den Ländervergleich mit Österreich und der Schweiz herangezogen.
