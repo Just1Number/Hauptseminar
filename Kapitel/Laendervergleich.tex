@@ -2,7 +2,7 @@
 Um die Digitalisierung der deutschen Krankenhauslandschaft im internationalem Vergleich zu sehen, werden hier Deutschland, Österreich und die deutschsprachige Schweiz miteinander verglichen. Datengrundlage des Vergleichs ist der IT-Report Gesundheitswesen 2020 der Hochschule Osnabrück.
 \subsection{IT-Report Gesundheitswesen 2020}
 Für diesen Ländervergleich wird der IT-Report Gesundheitswesen 2020 herangezogen, in welchem nicht nur deutsche Krankenhäuser, sondern auch Krankenhäuser aus Österreich und der Schweiz, zum Thema Digitalisierung befragt wurden. Die Umfrage fand im Jahr 2017 vom 1.7. bis zum 14.12. statt und bestand aus 87 Fragen, gerichtet an ärztliche und pflegerische Direktoren. Insgesamt wurden 2421 Krankenhäuser angeschrieben, davon 1951 in Deutschland, 260 in Österreich und 211 aus der deutschsprachigen Schweiz \parencite{huebner2020}. Laut statista gab es im Jahr 2017 1942 Krankenhäuser in Deutschland\footnote{https://de.statista.com/statistik/daten/studie/2617/umfrage/anzahl-der-krankenhaeuser-in-deutschland-seit-2000/}, 271 Krankenhäuser in Österreich\footnote{https://de.statista.com/statistik/daten/studie/298568/umfrage/oesterreic-hanzahl-der-krankenhaeuser-seit-1985/} und 281 Krankenhäuser in der Schweiz\footnote{https://de.statista.com/statistik/daten/studie/306939/umfrage/anzahl-der-krankenhaeuser-in-der-schweiz/}. Es wurden also fasst alle Krankenhäuser in den drei Regionen angeschrieben. Antworten kamen aus 608 Krankenhäusern, davon 492 aus Deutschland (Rücklaufquote $25,2\%$), 49 aus Österreich ($18,8\%$), 67 aus der deutschsprachigen Schweiz ($31,8\%$) . Eine Übersicht über diese Zahlen befindet sich in Tabelle \ref{tab:anzahl-krankenhaeuser}. 
-\begin{table}[h]
+\begin{table}[ht]
 \begin{center}
 	\begin{tabular}{l|c|c|c|l}
 		&Angeschrieben&\parbox[c]{13ex}{\centering Krankenhäuser\\ insgesamt}&Antworten&Rücklaufquote\\
@@ -32,7 +32,6 @@ In der Studie wurde kein intensiver wertender Vergleich durchgeführt. Daher wur
 	Bei dieser Darstellung haben die Autoren der Studie aus ästhetischen Gründen Angaben unter 10\% nicht als Zahl angezeigt \parencite[298]{huebner2020}. Bei einer hohen Anzahl an Antworten (einem hohen n) wurden die Werte in diesen Fällen geschätzt. Bei einer kleinen Anzahl an Antworten ($n<50$), war die Anzahl der möglichen Werte so gering, das der genaue Wert ermittelt werden konnte. Auch hier besteht jede Frage aus mehreren Teilfragen. Diese werden wie bei den simpleren Balkendiagrammen einzeln einem Land gutgeschrieben und das Land mit den meisten Teilfragen wird dann als Gewinner der Frage gewertet.
 
 	Die Antwortmöglichkeiten auf die Teilfragen haben hier immer eine klare bewertende Reihenfolge. Es geht entweder um Zustimmung mit einer Aussage (\glqq Stimme überhaupt nicht zu\grqq{ }bis \glqq Stimme voll zu\grqq) oder um die Durchdringung einer IT-Funktion (0\%, unter 50\%, über 50\% oder 100\%). \glqq Weiß nicht\grqq{ }wurde ignoriert. Jeder dieser Antwortmöglichkeiten wurde nun eine Wertung von -2 bis 2 zugeschrieben. Jede Wertung wurde mit dem entsprechenden Prozentwert multipliziert und dann aufsummiert. Dem Land mit der höchsten Summe wurde die Teilfrage gutgeschrieben.
-	TODO: BEISPIEL
 	\vspace{\parheadvspace}\\
 	\textbf{Boxplots}\\
 	Boxplots haben eine sehr hohe Informationsdichte, die allerdings schwer zu vergleichen ist. Daher wurden hier nur die Mediane notiert und miteinander verglichen. Wie bei den vorherigen beiden Darstellungen, gibt es pro Frage mehrere Teilfragen, die wieder einzeln für ein Land entschieden werden, um dann die gewonnen Teilfragen zusammenzuzählen und die Frage dem Land zuzurechnen, das am meisten Teilfragen gewonnen hat.
@@ -88,7 +87,13 @@ In der Studie wurde kein intensiver wertender Vergleich durchgeführt. Daher wur
 % 	\item Für jede Frage wird entschieden was einen Digitalisierungsfortschritt darstellt
 % \end{itemize}
 \subsection{Gegenüberstellung der Länder}
-Bei der gewählten Methodik ist zwar erkennbar welches Land die meisten Fragen gewonnen hat, aber nicht wie stark. Diese Ergebnisse geben also nur eine vergleichende und keine Qualitative Übersicht. Die Gegenüberstellung erfolgt nach der Struktur, die im IT-Report Gesundheitswesen 2020 vorgegeben ist. So werden zuerst die klinischen Prozesse betrachtet und anschließend verschiedene IT-Funktionstypen und das IT-Management.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Bilder/laendervergleich_ergebnisse.png}
+	\caption{Ergebnisse des Ländervergleichs. Die Gewinner einer Kategorie sind grün markiert}
+	\label{fig:laender_ergebnisse}
+\end{figure}
+Bei der gewählten Methodik ist zwar erkennbar welches Land die meisten Fragen gewonnen hat, aber nicht wie stark. Diese Ergebnisse geben also nur eine vergleichende und keine Qualitative Übersicht. Die Gegenüberstellung erfolgt nach der Struktur, die im IT-Report Gesundheitswesen 2020 vorgegeben ist. So werden zuerst die klinischen Prozesse betrachtet und anschließend verschiedene IT-Funktionstypen und das IT-Management. Eine Übersicht über die Ergebnisse befindet sich in Abbildung \ref{fig:laender_ergebnisse}.
 \vspace{\parheadvspace}\\
 \textbf{Klinische Prozesse}\\
 In den Prozessen Aufnahme, Visite und Entlassung ist die Schweiz Vorreiter, während in den Unterstützungsprozessen des OP Deutschland führt. Es scheint, dass die externen Schnittstellen, Aufnahme und Entlassung, in Österreich und der Schweiz deutlich digitaler sind als in Deutschland. In der Visite zeigt sich vor allem eine höhere Verfügbarkeit von mobilen Geräten zum Zugriff auf Patientendaten und damit verbunden eine weitere Verbreitung von WLAN in Österreich und der Schweiz im Vergleich zu Deutschland. Daten im OP-Verlauf stehen in Deutschland jedoch deutlich häufiger in elektronischer Form bereit und die Informationsgüte ist höher, was sich am guten Abschneiden in der OP-Vorbereitung widerspiegelt. Bei der OP-Nachbereitung ergibt sich ein ähnliches Bild. Da OP-Daten in deutschen Krankenhäusern häufiger elektronisch verfügbar sind, können sie auch einfacher auf die Stationen übernommen werden. Die Zufriedenheit mit dem IT-Einsatz in den fünf Prozessen ist in der Schweiz am höchsten. Auch die Verfügbarkeit wesentlicher Patientendaten wird von schweizer Klinikern am besten eingeschätzt.
@@ -105,10 +110,10 @@ Die Zufriedenheit mit dem IT-Support ist in Österreich und der Schweiz höher a
 Im Allgemeinen ergibt sich bei Betrachtung der Daten des IT-Report Gesundheitswesen 2020 ein klares Bild: Die deutschsprachige Schweiz ist in Sachen Digitalisierung den andern Ländern vorraus, während Deutschland ehr Schlusslicht ist. Österreich befindet sich im Mittelfeld, ist aber deutlich näher an Deutschland als an der Schweiz. Das ist auch die Einschätzung in der Zusammenfassung des Report \parencite[29]{huebner2020}.
 
 \subsection{Weitere Länder}
-\begin{figure}[h]
-	%\includegraphics[width=0.95\textwidth]{Bilder/laendervergleich_EMRAM_Stephani_2019.png}
+\begin{figure}[ht]
+	\includegraphics[width=0.95\textwidth]{Bilder/laendervergleich_EMRAM_Stephani_2019.png}
 	\caption{Durchschnittliche EMRAM-Werte in ausgewählten Regionen seit 2011 \parencite{Stephani2019}}
 	\label{fig:andere_laender}
 \end{figure}
-Für eine breitere Übersicht über den internationalen Stand der Digitalisierung an Krankenhäusern wird hier eine Übersicht des Schnitts der EMRAM Werte (siehe Kapitel \ref{sec:EMRAM}) ausgewählter Länder von 2011 bis 2017 aus \cite{Stephani2019} herangezogen. Es ist zu erkennen, dass Deutschland und Österreich mit einem Mittelwert von $2,3$ auf einem ähnlichen Niveau liegen, das deutlich unter dem europäischen Durchschnitt von $3,6$ liegt. Es gilt hier zu erwähnen, dass sich 167 deutsche Krankenhäuser über den Zeitraum zertifizieren lassen haben während es in Österreich nur 18 waren. Führende Länder in Europa sind die Niederlande ($n=36$) und Dänemark ($n=24$), mit einem jeweiligen Schnitt von $4,8$ und $5,4$. Die Türkei ($n=682$), das vereinigte Königreich ($n=105$) und Spanien ($n=156$) liegen nahe am europäischen Mittel.
+Für eine breitere Übersicht über den internationalen Stand der Digitalisierung an Krankenhäusern wird hier eine Übersicht des Schnitts der EMRAM Werte ausgewählter Länder von 2011 bis 2017 (siehe Abbildung \ref{fig:andere_laender}) aus \cite{Stephani2019} herangezogen. Eine Übersicht darüber wie diese Werte ermittelt werden befindet sich in Kapitel \ref{sec:EMRAM}. Es ist zu erkennen, dass Deutschland und Österreich mit einem Mittelwert von $2,3$ auf einem ähnlichen Niveau liegen, das deutlich unter dem europäischen Durchschnitt von $3,6$ liegt. Es gilt hier zu erwähnen, dass sich 167 deutsche Krankenhäuser über den Zeitraum zertifizieren lassen haben während es in Österreich nur 18 waren. Führende Länder in Europa sind die Niederlande ($n=36$) und Dänemark ($n=24$), mit einem jeweiligen Schnitt von $4,8$ und $5,4$. Die Türkei ($n=682$), das vereinigte Königreich($n=105$) und Spanien ($n=156$) liegen nahe am europäischen Mittel.
 
