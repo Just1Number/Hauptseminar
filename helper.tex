@@ -17,13 +17,14 @@ Treibergrößen und Defizitbereiche in Deutschland}
 \usepackage{csquotes}
 \usepackage[german]{babel}
 \usepackage[T1]{fontenc}
-\usepackage[margin=15mm,left=40mm,right=15mm]{geometry}
+\usepackage[margin=20mm,left=40mm,right=15mm]{geometry}
 \usepackage[table,usenames,dvipsnames]{xcolor}
-\usepackage{graphicx, wrapfig, helvet, titlesec, fancyhdr, subcaption, multirow}
+\usepackage{graphicx, wrapfig, helvet, titlesec, fancyhdr, subcaption, multirow, setspace, pdfpages}
 \usepackage[germankw,german]{algorithm2e}
 \usepackage{tikz}
 \usepackage{tikz-qtree}
 \usepackage{eurosym}
+\onehalfspace
 \usetikzlibrary{trees}
 \tikzset{
   treenode/.style = {shape=rectangle, rounded corners,
@@ -93,7 +94,7 @@ Treibergrößen und Defizitbereiche in Deutschland}
 \titleformat
 {\section} % command
 [block] % shape
-{\LARGE\bfseries\color{thmgrey}} % format
+{\Large\bfseries\color{thmgrey}} % format
 {\thesection} % label
 {1ex} % sep between label and title
 {} % before-code

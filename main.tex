@@ -4,14 +4,25 @@
 \input{header.tex} % titelpage and table of contents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-% \section*{Abstract}
-% \addcontentsline{toc}{section}{Abstract}
-% \input{Kapitel/Abstract}
-% \newpage
-\pagenumbering{arabic}
-\section{Einleitung}
+\pagenumbering{Roman}
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
 \input{Kapitel/Einleitung}
-\section{Das digitale Krankenhaus}
+\newpage
+\tableofcontents
+\newpage
+\listoftables
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
+\newpage
+\listoffigures
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\newpage
+\restoregeometry
+\setlength{\parskip}{0.5ex}
+\pagenumbering{arabic}
+% \section{Einleitung}
+% \input{Kapitel/Einleitung}
+\section{Einleitung -- Das digitale Krankenhaus}
 \input{Kapitel/Digitales_Krankenhaus}
 \section{Methoden zur Messung des Digitalisierungsstandes}
 \input{Kapitel/Digitalisierung_messen}
@@ -23,27 +34,16 @@
 \input{Kapitel/Fazit}
 \newpage
 \pagenumbering{Roman}
-\setcounter{page}{3}
-\listoftables
-\addcontentsline{toc}{section}{Tabellenverzeichnis}
-\newpage
-\listoffigures
-\addcontentsline{toc}{section}{Abbildungsverzeichnis}
-\newpage
+\setcounter{page}{5}
 \printbibliography
 \addcontentsline{toc}{section}{Literaturverzeichnis}
 \newpage
+\section*{Anhang}
+\addcontentsline{toc}{section}{Anhang}
+Im Anhang befindet sich das Dokument \textit{IT-Report 2020 Analyse.ods}. 
+\newpage
+%\includepdf{}
 \pagenumbering{gobble}
 \section*{Eidesstattliche Versicherung}
 \addcontentsline{toc}{section}{Eidesstattliche Versicherung}
-Hiermit versichere ich, die vorliegende Arbeit selbstständig und unter ausschließlicher Verwendung der angegebenen Literatur und Hilfsmittel erstellt zu haben. Die Arbeit wurde bisher in gleicher oder ähnlicher Form keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht.
-
-Weiterhin bin ich damit einverstanden, dass meine Arbeit der THM-internen Plagiatsprüfung unterworfen wird.
-\begin{table}[ht]
-   \centering 
-    \begin{tabular}{cc cp{4cm}c cc}
-    &&&&&&\\\cline{1-3}\cline{5-7}
-    &Ort, Datum &&&& Unterschrift&\\
-    \end{tabular}
-\end{table}
-\end{document}
+\input{Kapitel/Eidesstattliche_Versicherung}
