@@ -19,12 +19,12 @@ Treibergrößen und Defizitbereiche in Deutschland}
 \usepackage[T1]{fontenc}
 \usepackage[margin=20mm,left=40mm,right=15mm]{geometry}
 \usepackage[table,usenames,dvipsnames]{xcolor}
-\usepackage{graphicx, wrapfig, helvet, titlesec, fancyhdr, subcaption, multirow, setspace, pdfpages}
+\usepackage{graphicx, wrapfig, helvet, titlesec, fancyhdr, subcaption, multirow}
+\usepackage{pdfpages}
 \usepackage[germankw,german]{algorithm2e}
 \usepackage{tikz}
 \usepackage{tikz-qtree}
 \usepackage{eurosym}
-\onehalfspace
 \usetikzlibrary{trees}
 \tikzset{
   treenode/.style = {shape=rectangle, rounded corners,
@@ -68,7 +68,6 @@ Treibergrößen und Defizitbereiche in Deutschland}
 
 % define color used for titels. Offical color of the thm
 \definecolor{thmgrey}{HTML}{4a5c66}
-\definecolor{green}{HTML}{4E9A06}
 
 % sets the vspace ahead of a paragraph headline (unnumbered subsection)
 \newcommand\parheadvspace{1ex}
@@ -80,8 +79,9 @@ Treibergrößen und Defizitbereiche in Deutschland}
 \def\O{\mathcal{O}}
 
 % Set paragraph indentation and spacing
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.5ex}
+\setlength{\parindent}{0ex}
+\setlength{\parskip}{0ex}
+\renewcommand{\baselinestretch}{1.25}
 
 % All this just to have page numbers not centered smh
 % \pagestyle{fancy}
@@ -114,7 +114,7 @@ Treibergrößen und Defizitbereiche in Deutschland}
 \titleformat
 {\subsubsection} % command
 [block] % shape
-{\large\bfseries\color{thmgrey}} % format
+{\bfseries\color{thmgrey}} % format
 {\thesubsubsection} % label
 {1ex} % sep between label and title
 {} % before-code
