@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/latex,linux,windows
 
 ### LaTeX ###
@@ -264,3 +263,4 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/latex,linux,windows
+!Kapitel/Anhang.pdf
